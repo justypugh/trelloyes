@@ -1,15 +1,11 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import App from './App';
-import Card from '/.Card';
+import Card from './Card';
 import List from './List';
 import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
 describe('Card component', () => {
   it('renders without crashing', () => {
